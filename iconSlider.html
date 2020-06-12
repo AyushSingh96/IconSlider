@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Slider Icon</title>
+<meta charset="utf-8">
+
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slick.min.css">
+
+<script>
+$( document ).ready(function() {
+   	$('.box-carousel').slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: "<button type='button' class='mission-prev-arrow'></button>",
+		nextArrow: "<button type='button' class='mission-next-arrow'></button>"
+	});
+
+});
+</script>
+
+<style>
+.box {
+  width: 227px;
+  height: 227px;
+  background-color: #f6f6f6;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.box a {
+  color: #461e52;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 30% 30px 0 30px;
+  text-align: center;
+  transition: none;
+  line-height: 1;
+  font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+}
+.box:hover{
+  background-color: #ADD8E6 ;
+}
+.box:hover a{
+ color:#fff;
+ text-decoration:none;
+}
+.mission-next-arrow {
+  position: absolute;
+  background: url(Icon/right.png) no-repeat center;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -36px;
+  height: 17px;
+  width: 10px;
+  border:none;
+}
+.mission-next-arrow:hover {
+  cursor: pointer;	
+}
+.mission-prev-arrow {
+  background: url(Icon/left.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -36px;
+  height: 17px;
+  width: 10px;
+  border:none;
+} 
+.mission-prev-arrow:hover {
+  cursor: pointer;	
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+  <div class="row">
+	  <div class="col-sm-12">
+		 <h2 class="h2 font-weight-bold text-uppercase text-center my-5">A N N A N Y A</h2>
+	  </div>
+  </div>
+  <div class="row">
+	<div class="col-sm-12">
+	  <div class="carousel box-carousel d-none d-sm-block">
+		  <div class="box">
+		    <img src="Icon/A1.png" >
+		  </div>
+		  <div class="box">
+		    <img src="Icon/N1.png" >
+		  </div>
+		  <div class="box">
+		    <img src="Icon/N2.png" >
+		  </div>
+		  <div class="box">
+		    <img src="Icon/A2.png" >
+		  </div>
+		  <div class="box">
+		    <img src="Icon/N2.png" >
+		  </div>
+		  <div class="box">
+		    <img src="Icon/y.png" >
+		  </div>
+		  <div class="box">
+		    <img src="Icon/A3.png" >
+		  </div>
+		</div><!-- carousel-->
+	</div><!--col-->
+  </div><!--row-->
+	
+
+
+</body>
+</html>
